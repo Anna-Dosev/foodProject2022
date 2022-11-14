@@ -1,44 +1,55 @@
-// const itemsList = document.getElementById('items-list'); //caching the ul element
-// const searchInput = document.getElementById('search');
+const form = document.querySelector('.form-container');
+const mainContainer = document.querySelector('.main-search-container');
 
-// const renderItemsList = items => {
-//     itemsList.innerHTML = ' ';
-//     items.forEach(item => { //items defined in data.js
-//     const li = document.createElement('li');
-//     li.innerText = item;
-//     itemsList.append(li); //actually changes the html
-//     });
-// };
+const ingredients = document.getElementById('ingredients')
+const cuisinie = document.getElementById('cuisine')
 
-// renderItemsList(itemsContent);
-
-// searchInput.addEventListener('keyup', e => { //actually captures the event 'e'
-//     const value = e.target.value;
-//     const filteredItems = itemsContent.filter(item => item.toLowerCase().search(value) !== -1);
-//     renderItemsList(filteredItems);
-// });
-// //creating a new array filteredItems from old array items; 
-
-// getting all required elements
+//AUTOSEARCH
+const itemsContent = [
+    'African',
+    'American',
+    'British',
+    'Cajun',
+    'Caribbean',
+    'Chinese',
+    'Eastern European',
+    'European',
+    'French',
+    'German',
+    'Greek',
+    'Indian',
+    'Irish',
+    'Italian',
+    'Japanese',
+    'Jewish',
+    'Korean',
+    'Latin American',
+    'Mediterranean',
+    'Mexican',
+    'Middle Eastern',
+    'Nordic',
+    'Southern',
+    'Spanish',
+    'Thai',
+    'Vietnamese'
+];
 const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
+const inputBox = searchWrapper.querySelector(".input-box");
 const suggBox = searchWrapper.querySelector(".autocom-box");
-
 
 inputBox.addEventListener('keyup', e => {
     let userData = e.target.value;
     let emptyArray = [];
     if(userData){
-        icon.onclick = ()=>{
-            linkTag.click();
-        }
+        // inputBox.onclick = ()=>{
+        //     linkTag.click();
+        // }
         emptyArray = itemsContent.filter((data)=>{
             //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
         });
         emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
-            return data = `<li>${data}</li>`;
+            return data = `<li class="list-style">${data}</li>`;
         });
         searchWrapper.classList.add("active"); //show autocomplete box
         showSuggestions(emptyArray);
@@ -47,8 +58,8 @@ inputBox.addEventListener('keyup', e => {
             //adding onclick attribute in all li tag
             allList[i].setAttribute("onclick", "select(this)");
         }
-    }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+    } else{
+        searchWrapper.classList.remove("active"); //show autocomplete box
     }
 });
 
@@ -56,9 +67,9 @@ inputBox.addEventListener('keyup', e => {
 function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
-    icon.onclick = ()=>{
-        linkTag.click();
-    }
+    // inputBox.onclick = ()=>{
+    //     linkTag.click();
+    // }
     searchWrapper.classList.remove("active");
 }
 
@@ -67,9 +78,18 @@ function showSuggestions(list){
     let listData;
     if(!list.length){
         userValue = inputBox.value;
-        listData = `<li>${userValue}</li>`;
+        listData = `<li class="list-style">${userValue}</li>`;
     }else{
       listData = list.join('');
     }
     suggBox.innerHTML = listData;
+}
+
+
+
+//SEARCH BTN
+const searchBtn = document.querySelector('.search-btn');
+
+searchBtn.onclick = function() {
+ console.log('button enabled')
 }

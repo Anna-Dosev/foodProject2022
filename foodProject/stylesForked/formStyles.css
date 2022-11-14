@@ -36,12 +36,16 @@ align-items: center;
 width: 45%;
 }
 
-.input {
+.input-box{
 border: 1px solid #32384d;
 border-radius: 8px;
 padding: 10px;
 font-size: 1.15rem;
 color: #32384d;
+}
+
+.list-style {
+list-style: none;
 }
 
 .btn-container {

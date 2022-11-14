@@ -22,18 +22,18 @@
       <div class="main-search-container">
         <div class="input-container" id="ingredients">
           <h3>Meal Type</h3>
-          <input type="text" class="input" placeholder="ie. chicken"/> 
+          <input type="text" class="input-box" placeholder="ie. chicken"/> 
         </div>
-        <div class="input-container" id="cuisine">
+        <div class="input-container .search-input" id="live-search-cuisine">
           <h3>Cuisine Style</h3>
             <div class="search-input">
                 <a href="" target="_blank" hidden></a>
-                <input class="input" type="text" placeholder="ie. Italian"/>
-                <!-- <div class="autocom-box">
-                    <ul id='items-list'></ul>
-                </div> -->
+                <input class="input-box" type="text" placeholder="ie. Italian"/>
+                <div class="autocom-box">
+                  <ul id='items-list'></ul>
+                </div>
             </div>
-            <!-- <ul id="cuisine-list"></ul> -->
+            <ul id="cuisine-list"></ul>
         </div>
       </div>
       <div class="filters">
@@ -51,6 +51,7 @@
         </div>
         <div id="allergies">
             <h3>Allergies</h3>
+            <p>(The search results will omit recipes with these ingredients.)</p>
             <div class="allergy-labels">
                 <label for="Dairy"><input type="checkbox" value="Dairy" name="allergies" id="Dairy">Dairy </label>
                 <label for="Gluten"><input type="checkbox" value="Gluten" name="allergies" id="Gluten">Gluten </label>
@@ -62,7 +63,13 @@
       </div>
     </form>
     <div class="btn-container">
-      <button type="submit" class="search-btn">Get Recipe</button>
+      <button class="search-btn">Get Recipe</button>
     </div>
+
+
+
+
+    <script src="./forkedJs.js" type="text/javascript"></script>
+
     </body>
 </html>
