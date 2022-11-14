@@ -5,9 +5,7 @@ function renderNav () {
     const nav = document.createElement('nav');
     const navHtml = `
             <nav class="y-vcenter">
-            <div class="container">
-                <div class="seal seal--nav">Nourriture</div>
-            </div>
+
             <ul class="links">
                 <li>About</li>
                 <li>Mindful meal planning</li>

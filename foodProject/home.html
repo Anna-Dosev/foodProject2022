@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link href="./stylesForked/navStyles.css" rel="stylesheet" />
+    <link href="./stylesForked/formStyles.css" rel="stylesheet" />
+</head>
+    <body>
+    <div class="navbar">
+        <p class="nav-item">Home</p>
+        <p class="nav-item">About</p>
+        <p class="nav-item">Recipe of the Day</p>
+    </div>
+    <div class="instructions">
+        <h1 class="title">La Nourriture</h1>
+        <p>Use the form below to find different recipes. Happy cooking!</p>
+    </div>
+    <form class="form-container">
+      <div class="main-search-container">
+        <div class="input-container" id="ingredients">
+          <h3>Meal Type</h3>
+          <input type="text" class="input" placeholder="ie. chicken"/> 
+        </div>
+        <div class="input-container" id="cuisine">
+          <h3>Cuisine Style</h3>
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input class="input" type="text" placeholder="ie. Italian"/>
+                <!-- <div class="autocom-box">
+                    <ul id='items-list'></ul>
+                </div> -->
+            </div>
+            <!-- <ul id="cuisine-list"></ul> -->
+        </div>
+      </div>
+      <div class="filters">
+        <div id="dietary-choices">
+            <h3>Dietary Choices</h3>
+            <div class="diet-labels">
+                <label for="gluten-free"><input type="checkbox" value="gluten-free" name="dietaryChoices" id="gluten-free"> Gluten Free</label>
+                <label for="low-carb"><input type="checkbox" value="true" id="low-carb" name= "lowCarb"> Low Carb</label>
+                <label for="vegetarian"><input type="checkbox" value="vegetarian" name="dietaryChoices" id="vegetarian"> Vegetarian  </label>
+                <br></br>
+                <label for="vegan"><input type="checkbox" value="vegan" name="dietaryChoices" id="vegan"> Vegan</label>
+                <label for="pescatarian"><input type="checkbox" value="pescatarian" name="dietaryChoices" id="pescatarian"> Pescatarian</label>
+                <label for="paleo"><input type="checkbox" value="paleo" name="dietaryChoices" id="paleo"> Paleo</label>
+            </div>  
+        </div>
+        <div id="allergies">
+            <h3>Allergies</h3>
+            <div class="allergy-labels">
+                <label for="Dairy"><input type="checkbox" value="Dairy" name="allergies" id="Dairy">Dairy </label>
+                <label for="Gluten"><input type="checkbox" value="Gluten" name="allergies" id="Gluten">Gluten </label>
+                <label for="Peanut"><input type="checkbox" value="Peanut" name="allergies" id="Peanut">Peanut </label>
+                <label for="Shellfish"><input type="checkbox" value="Shellfish" name="allergies" id="Shellfish">Shellfish </label>
+                <label for="Soy"><input type="checkbox" value="Soy" name="allergies" id="Soy">Soy </label>
+            </div>
+        </div>
+      </div>
+    </form>
+    <div class="btn-container">
+      <button type="submit" class="search-btn">Get Recipe</button>
+    </div>
+    </body>
+</html>
