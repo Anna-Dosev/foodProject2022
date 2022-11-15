@@ -295,7 +295,7 @@ const getRandomFood = async () => {
     </div>`
 
     foodItem.append(recipeInfo)
-    
+}
     // for(let ingredient of foodIngredients){
     //     const recipeInfo = document.createElement('div')
     //     recipeInfo.className = 'recipe-container'
@@ -304,7 +304,7 @@ const getRandomFood = async () => {
     //     `
     //     foodItem.append(recipeInfo)
     // }
-}
+
 
 const getFoodJoke = async () => {
     const apiData = await fetch (`https://api.spoonacular.com/food/jokes/random?apiKey=9f84e0adf95c447bac51d4eef9d24191`)

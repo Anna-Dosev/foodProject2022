@@ -1,0 +1,33 @@
+.title {
+font-size: 2.2rem;
+font-style: italic;
+color: #32384d;
+}
+
+.intro {
+margin: auto;
+color: #32384d;
+text-align: center;
+margin-top: 80px;
+letter-spacing: 0.15em;
+background-color: transparent;
+}
+
+.photo-container {
+width: 80%;
+margin: auto;
+display: flex;
+flex-direction: row;
+padding-top: 100px;
+text-align: center;
+}
+
+.photo {
+margin: auto;
+}
+
+.img {
+height: 200px;
+margin: auto;
+}
+

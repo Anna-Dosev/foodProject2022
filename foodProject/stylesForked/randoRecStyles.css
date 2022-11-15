@@ -1,0 +1,75 @@
+* {
+font-family: sans-serif;
+}
+.title {
+font-size: 2.2rem;
+font-style: italic;
+}
+
+.intro {
+width: 65%;
+margin: auto;
+color: #32384d;
+text-align: center;
+margin-top: 80px;
+letter-spacing: 0.15em;
+background-color: transparent;
+}
+
+.search-btn{
+border-radius: 8px;
+padding: 10px;
+font-size: 1.15rem;
+color: white;
+background-color: #32384d;
+cursor: pointer;
+margin-top: 20px;
+}
+
+.recipe-container {
+width: 80%;
+margin: auto;
+padding-top: 100px;
+color: #32384d;
+}
+
+.recipe-title{
+letter-spacing: 0.15em;
+font-size: 1.25rem;
+padding-bottom: 20px;
+}
+
+#recipeimage {
+align-items: center;
+justify-content: center;
+align-content: center;
+border-radius: 8px;
+margin: auto;
+}
+
+.ready {
+padding-top: 20px;
+letter-spacing: 0.15em;
+font-size: 1.05rem;
+}
+
+.servings {
+letter-spacing: 0.15em;
+font-size: 1.05rem;
+padding-bottom: 20px;
+}
+
+.summary {
+width: 65%;
+line-height: 1.45rem;
+}
+
+.ingredients {
+width: 65%;
+margin: 20px;
+}
+
+.stepstyletext {
+width: 65%;
+margin: 20px;
+}

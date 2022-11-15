@@ -7,12 +7,13 @@
     <title>Document</title>  
     <link href="./stylesForked/navStyles.css" rel="stylesheet" />
     <link href="./stylesForked/formStyles.css" rel="stylesheet" />
+    <link href="./stylesForked/searchResults.css" rel="stylesheet" />
 </head>
     <body>
     <div class="navbar">
-        <p class="nav-item">Home</p>
-        <p class="nav-item">About</p>
-        <p class="nav-item">Recipe of the Day</p>
+      <a href="./home.html">Home</a>
+      <a href="./randomrecipe.html">Random Recipe</a>
+      <a href="./about.html">About</a>
     </div>
     <div class="instructions">
         <h1 class="title">La Nourriture</h1>
@@ -66,6 +67,44 @@
       <button class="search-btn">Get Recipe</button>
     </div>
 
+    <!-- <div class="food-result" id="food-result">
+      <div class="food-item"></div>
+    </div> -->
+
+    <div class="wrapper-grid" class="entireBox">
+      <div class="resultContainer" class="boxBody">
+          <div class='banner-img'></div>
+          <img src="${imDis}" alt='profile image' class="profile-img">
+          <h1 class="recipeName">${titDis}</h1>
+          <h3 class='cook-time'>${cookTime} min </h3>
+          <br>
+          <button class='viewRecipeBtn'>View Recipe</button>
+      </div>
+      <div class="resultContainer" class="boxBody">
+        <div class='banner-img'></div>
+        <img src="${imDis}" alt='profile image' class="profile-img">
+        <h1 class="recipeName">${titDis}</h1>
+        <h3 class='cook-time'>${cookTime} min </h3>
+        <br>
+      <button class='viewRecipeBtn'>View Recipe</button>
+    </div>
+    <div class="resultContainer" class="boxBody">
+      <div class='banner-img'></div>
+      <img src="${imDis}" alt='profile image' class="profile-img">
+      <h1 class="recipeName">${titDis}</h1>
+      <h3 class='cook-time'>${cookTime} min </h3>
+      <br>
+    <button class='viewRecipeBtn'>View Recipe</button>
+  </div>
+  <div class="resultContainer" class="boxBody">
+    <div class='banner-img'></div>
+    <img src="${imDis}" alt='profile image' class="profile-img">
+    <h1 class="recipeName">${titDis}</h1>
+    <h3 class='cook-time'>${cookTime} min </h3>
+    <br>
+  <button class='viewRecipeBtn'>View Recipe</button>
+</div>
+    </div>
 
 
 

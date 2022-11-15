@@ -1,20 +1,20 @@
 * {
-    font-family: sans-serif;
+font-family: sans-serif;
 }
 
 .navbar {
-    color: #32384d;
-    background-color: transparent;
-    width: 50%;
-    text-transform: uppercase;
-    letter-spacing: 0.25em;
-    display: flex;
-    flex-direction: row;
-    padding: 25px 0;
+background-color:#32384d;
+width: 100%;
+text-transform: uppercase;
+letter-spacing: 0.25em;
+display: flex;
+flex-direction: row;
+padding: 25px 0;
 }
-    
-.nav-item {
-    margin: auto;
+
+a {
+color: white;
+text-decoration: none;
+margin: 0 25px;
+cursor: pointer;
 }
-    
-      

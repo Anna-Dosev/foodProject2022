@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Random recipe</title>
+  <link href="./stylesForked/navStyles.css" rel="stylesheet" />
+  <link href="./stylesForked/randoRecStyles.css" rel="stylesheet" />
+</head>
+  <body>
+    <div class="navbar">
+      <a href="./home.html">Home</a>
+      <a href="./randomrecipe.html">Random Recipe</a>
+      <a href="./about.html">About</a>
+    </div>
+    <div class="intro">
+      <h1 class="title">La Nourriture</h1>
+      <p>Feeling hungry? Click below to get a randomly generated recipe.</p>
+      <button class="search-btn" class="search-btn" id="get_meal">Get Meal 🍔</button>
+    </div>
+      <div class="recipe-container">
+        <div class="recipe-title"></div>
+        <img id="recipeimage" src=""/>
+        <div class="ready"></div>
+        <div class="servings"></div>
+        <div class="summary"></div> 
+        <div class="ingredients"></div>
+        <div class="analyzedinstructions"></div>
+      </div>
+      <div id="meal" class="row meal"></div>
+  </div>
+    <script src="./randomrecipe.js" type="text/javascript"></script>
+    </body>
+</html>
