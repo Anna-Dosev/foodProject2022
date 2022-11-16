@@ -11,9 +11,9 @@
 </head>
     <body>
     <div class="navbar">
-      <a href="./home.html">Home</a>
-      <a href="./randomrecipe.html">Random Recipe</a>
-      <a href="./about.html">About</a>
+        <a class="navitem" href="./home.html">Home</a>
+        <a class="navitem" href="./randomrecipe.html">Random Recipe</a>
+        <a class="navitem" href="./about.html">About</a>
     </div>
     <div class="instructions">
         <h1 class="title">La Nourriture</h1>
@@ -23,13 +23,13 @@
       <div class="main-search-container">
         <div class="input-container" id="ingredients">
           <h3>Meal Type</h3>
-          <input type="text" class="input-box" placeholder="ie. chicken"/> 
+          <input name="ingredients" type="text" class="input-box" placeholder="ie. chicken"/> 
         </div>
         <div class="input-container .search-input" id="live-search-cuisine">
           <h3>Cuisine Style</h3>
             <div class="search-input">
                 <a href="" target="_blank" hidden></a>
-                <input class="input-box" type="text" placeholder="ie. Italian"/>
+                <input name="cuisine" class="input-box" type="text" placeholder="ie. Italian"/>
                 <div class="autocom-box">
                   <ul id='items-list'></ul>
                 </div>
@@ -42,7 +42,6 @@
             <h3>Dietary Choices</h3>
             <div class="diet-labels">
                 <label for="gluten-free"><input type="checkbox" value="gluten-free" name="dietaryChoices" id="gluten-free"> Gluten Free</label>
-                <label for="low-carb"><input type="checkbox" value="true" id="low-carb" name= "lowCarb"> Low Carb</label>
                 <label for="vegetarian"><input type="checkbox" value="vegetarian" name="dietaryChoices" id="vegetarian"> Vegetarian  </label>
                 <br></br>
                 <label for="vegan"><input type="checkbox" value="vegan" name="dietaryChoices" id="vegan"> Vegan</label>
@@ -54,61 +53,25 @@
             <h3>Allergies</h3>
             <p>(The search results will omit recipes with these ingredients.)</p>
             <div class="allergy-labels">
-                <label for="Dairy"><input type="checkbox" value="Dairy" name="allergies" id="Dairy">Dairy </label>
-                <label for="Gluten"><input type="checkbox" value="Gluten" name="allergies" id="Gluten">Gluten </label>
-                <label for="Peanut"><input type="checkbox" value="Peanut" name="allergies" id="Peanut">Peanut </label>
-                <label for="Shellfish"><input type="checkbox" value="Shellfish" name="allergies" id="Shellfish">Shellfish </label>
-                <label for="Soy"><input type="checkbox" value="Soy" name="allergies" id="Soy">Soy </label>
+                <label for="Dairy"><input type="checkbox" value="Dairy" name="allergies" id="dairy">Dairy </label>
+                <label for="Gluten"><input type="checkbox" value="Gluten" name="allergies" id="gluten">Gluten </label>
+                <label for="Peanut"><input type="checkbox" value="Peanut" name="allergies" id="peanut">Peanut </label>
+                <label for="Shellfish"><input type="checkbox" value="Shellfish" name="allergies" id="shellfish">Shellfish </label>
+                <label for="Soy"><input type="checkbox" value="Soy" name="allergies" id="soy">Soy </label>
             </div>
         </div>
       </div>
     </form>
     <div class="btn-container">
-      <button class="search-btn">Get Recipe</button>
+      <button class="search-btn" type="submit">Get Recipe</button>
     </div>
-
-    <!-- <div class="food-result" id="food-result">
-      <div class="food-item"></div>
-    </div> -->
-
-    <div class="wrapper-grid" class="entireBox">
-      <div class="resultContainer" class="boxBody">
-          <div class='banner-img'></div>
-          <img src="${imDis}" alt='profile image' class="profile-img">
-          <h1 class="recipeName">${titDis}</h1>
-          <h3 class='cook-time'>${cookTime} min </h3>
-          <br>
-          <button class='viewRecipeBtn'>View Recipe</button>
-      </div>
-      <div class="resultContainer" class="boxBody">
-        <div class='banner-img'></div>
-        <img src="${imDis}" alt='profile image' class="profile-img">
-        <h1 class="recipeName">${titDis}</h1>
-        <h3 class='cook-time'>${cookTime} min </h3>
-        <br>
-      <button class='viewRecipeBtn'>View Recipe</button>
-    </div>
-    <div class="resultContainer" class="boxBody">
-      <div class='banner-img'></div>
-      <img src="${imDis}" alt='profile image' class="profile-img">
-      <h1 class="recipeName">${titDis}</h1>
-      <h3 class='cook-time'>${cookTime} min </h3>
-      <br>
-    <button class='viewRecipeBtn'>View Recipe</button>
-  </div>
-  <div class="resultContainer" class="boxBody">
-    <div class='banner-img'></div>
-    <img src="${imDis}" alt='profile image' class="profile-img">
-    <h1 class="recipeName">${titDis}</h1>
-    <h3 class='cook-time'>${cookTime} min </h3>
-    <br>
-  <button class='viewRecipeBtn'>View Recipe</button>
-</div>
+    <div id="wrapper-grid" class="entireBox">
+      <!-- recipe grid from api will append within this div -->
     </div>
 
 
 
-    <script src="./forkedJs.js" type="text/javascript"></script>
-
+    <script src="./home.js" type="text/javascript"></script>
+    <script src="./autoSearch.js" type="text/javascript"></script>
     </body>
-</html>
+</html>     

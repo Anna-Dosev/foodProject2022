@@ -12,7 +12,7 @@ flex-direction: row;
 padding: 25px 0;
 }
 
-a {
+.navitem {
 color: white;
 text-decoration: none;
 margin: 0 25px;

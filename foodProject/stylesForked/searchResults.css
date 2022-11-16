@@ -1,7 +1,7 @@
 
-  .wrapper-grid {
+  #wrapper-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 650px);
+    grid-template-columns: repeat(auto-fit, 500px);
     grid-gap: 15px;
     justify-content: center;
     margin: auto;
@@ -15,7 +15,7 @@
     border-radius: 1rem;
     position: relative;
     margin: 20px auto;
-    width: 55%;
+    width: 65%;
   }
   
   .banner-img {
@@ -34,18 +34,11 @@
   }
   
   .recipeName {
-    font-weight: bold;
     font-size: 1.5rem;
   }
   
   .viewRecipeBtn {
-    width: fit-content;
-    border: none;
     font-size: 1rem;
-    color: white;
-    padding: 1rem;
-    margin-bottom: 10px;
-    background-color: #14274e;
-    border-radius: 1rem;
     cursor: pointer;
+    text-decoration: none;
   }
